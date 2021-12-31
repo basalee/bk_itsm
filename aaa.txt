@@ -1,0 +1,24 @@
+ 1 [uwsgi]
+ 2 socket = 192.168.1.2:8000                  #应用服务IP端口
+ 3 chdir = /pyvenv/src/eduonline              #项目根目录
+ 4 module = eduonline.wsgi　　　　　　          #指定wsgi模块，与Nginx连接时用
+ 5 #http = IP:Port                            #web服务IP端口，uWSGI做web服务器时用
+ 6 master = true                              #进程
+ 7 processes = 4                              #进程数
+ 8 
+ 9 #vhost = true                              #多站模式
+10 #no-site = true                            #多站模式时不设置入口模块和文件
+11 #workers = 2                               #子进程数
+12 #reload-mercy = 10
+13 #vacuum = true                             #退出、重启时清理文件
+14 #max-requests = 1000
+15 #limit-as = 512
+16 #buffer-size = 30000
+17 
+18 #进程文件，新建空文件即可，用于服务重启、停止。如：
+19 #重启指令：uwsgi --restart [pidfile路径]
+20 #停止指令：uwsgi --stop [pidfile路径]
+21 pidfile = /pyvenv/src/eduonline/uwsgi.pid      
+22 daemonize = /pyvenv/src/eduonline/uwsgi.log     #日志文件，一般会自动创建
+23 #disable-logging = true                         #不记录正常信息，只记录错误信息
+
