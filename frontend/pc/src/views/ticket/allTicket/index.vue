@@ -190,15 +190,56 @@
                     value: '',
                     list: [],
                     placeholder: this.$t('m.tickets["请选择业务"]')
+                },
+                {
+                    name: '优先级',
+                    key: 'priority',
+                    type: 'select',
+                    display: true,
+                    value: '',
+                    list: [
+                        { 'key': 1, name: '低' },
+                        { 'key': 2, name: '中' },
+                        { 'key': 3, name: '高' }
+                    ],
+                    placeholder: '优先级'
+                },
+                {
+                    name: '紧急程度',
+                    key: 'urgency',
+                    type: 'select',
+                    display: true,
+                    value: '',
+                    list: [
+                        { 'key': 1, name: '低' },
+                        { 'key': 2, name: '中' },
+                        { 'key': 3, name: '高' }
+                    ],
+                    placeholder: '紧急程度'
+                },
+                {
+                    name: '影响范围',
+                    key: 'impact',
+                    type: 'select',
+                    display: true,
+                    value: '',
+                    list: [
+                        { 'key': 1, name: '低' },
+                        { 'key': 2, name: '中' },
+                        { 'key': 3, name: '高' }
+                    ],
+                    placeholder: '影响范围'
+                },
+                {
+                    name: '业务影响',
+                    type: 'input',
+                    key: 'YEWUYINGXIANG',
+                    multiSelect: true,
+                    display: true,
+                    value: '',
+                    list: [],
+                    placeholder: '业务影响'
                 }
-                // {
-                //     name: this.$t(`m.tickets["节点名称"]`),
-                //     key: 'state_name',
-                //     type: 'input',
-                //     display: true,
-                //     value: '',
-                //     placeholder: this.$t('m.tickets["请选择节点名称"]')
-                // }
             ]
             return {
                 isExportDialogShow: false,

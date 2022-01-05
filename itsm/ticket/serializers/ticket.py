@@ -91,6 +91,7 @@ from itsm.ticket.models import (
     SlaTask,
     Sla,
     SlaTicketHighlight,
+    TicketField,
 )
 from itsm.workflow.models import WorkflowVersion
 from itsm.ticket.serializers.field import (
@@ -567,16 +568,30 @@ class TicketList(object):
                 inst.update(comment_id="-1")
         
         #print(ticket_list)
+        # for i in ticket_list:
+        #     print(i)
+
+        #aList = TicketField.objects.all()
+        #print(aList)
+        # for a in ticket_list:
+        #     for d in aList:
+        #         if d["ticket_id"] == a["id"]:
+        #             if d["name"] == "优先级":
+        #                 if d["_value"] == 'priority':
+        #                     print(a)
+        #print(ticket_list)
+        #print('999999999999999999999')
         return ticket_list
-        newTicketList = []
-        aList = PriorityMatrix.objects.all()
-        for item in ticket_list:
-            for sonItsm in aList:
-                if item["id"] == sonItsm["ticket_id"]:
-                    if sonItsm["priority"] == value:
-                        newTicketList.append(item)
-        
-        return newTicketList
+        #return []
+        # newTicketList = []
+        # aList = PriorityMatrix.objects.all()
+        # for item in ticket_list:
+        #     for sonItsm in aList:
+        #         if item["id"] == sonItsm["ticket_id"]:
+        #             if sonItsm["priority"] == value:
+        #                 newTicketList.append(item)
+        #
+        # return newTicketList
 
 class TicketSerializer(AuthModelSerializer):
     """单据序列化"""

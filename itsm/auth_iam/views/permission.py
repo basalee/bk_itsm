@@ -65,6 +65,6 @@ class PermissionViewSet(ApiGenericMixin, ViewSet):
     def platform_permission(self, request):
         iam_client = IamRequest(request)
         verify_actions = PLATFORM_PERMISSION
-        # auth_actions = iam_client.resource_multi_actions_allowed(verify_actions, [])
+        #auth_actions = iam_client.resource_multi_actions_allowed(verify_actions, [])
         auth_actions = {item: True for item in verify_actions}
         return Response(auth_actions)

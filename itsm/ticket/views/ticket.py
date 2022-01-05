@@ -30,8 +30,10 @@ import datetime
 import io
 import json
 import base64
-
 import xlwt
+import re
+
+from django.core import serializers
 from django.conf import settings
 from django.core.cache import cache
 from django.db import connection, transaction
@@ -108,6 +110,7 @@ from itsm.service.serializers import ServiceSerializer
 from itsm.trigger.models import Action
 from itsm.trigger.serializers import ActionSerializer
 from itsm.task.models import Task
+
 from itsm.ticket.models import (
     FIELD_STATUS,
     Status,
@@ -119,6 +122,8 @@ from itsm.ticket.models import (
     TicketSuperviseNotifyLog,
     TicketToTicket,
     SignTask,
+    AttentionUsers,
+    StatusTransitLog,
 )
 from itsm.ticket.permissions import (
     TicketPermissionValidate,
@@ -308,6 +313,7 @@ class TicketModelViewSet(ModelViewSet):
         # 初始化serializer的上下文
         queryset = self.custom_filter_queryset(request)
 
+
         project_key = request.query_params.get("project_key", None)
         if project_key is not None:
             queryset = queryset.filter(project_key=project_key)
@@ -319,7 +325,71 @@ class TicketModelViewSet(ModelViewSet):
                 username=request.user.username,
                 token=request.query_params.get("token", ""),
             ).to_client_representation()
-            return self.get_paginated_response(data)
+            #优先级
+            newlist1 = []
+            priority = request.query_params.get("priority", '')
+            for item in data:
+                if priority != "":
+                    aList = TicketField.objects.filter(key='priority', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    #print(json.loads(result)[0])
+                    #print(json.loads(result)[0]["fields"]["_value"])
+                    if priority == json.loads(result)[0]["fields"]["_value"]:
+                        newlist1.append(item)
+                else:
+                    newlist1.append(item)
+            #print(newlist)
+            #紧急程度
+            newlist2 = []
+            urgency = request.query_params.get("urgency", '')
+            #print(urgency)
+            #print('------------------')
+            for item in newlist1:
+                if urgency != "":
+                    aList = TicketField.objects.filter(key='urgency', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if urgency == json.loads(result)[0]["fields"]["_value"]:
+                        newlist2.append(item)
+                else:
+                    newlist2.append(item)
+            #print(newlist1)
+            #影响范围
+            newlist3 = []
+            impact = request.query_params.get("impact", '')
+            for item in newlist2:
+                if impact != "":
+                    aList = TicketField.objects.filter(key='impact', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if impact == json.loads(result)[0]["fields"]["_value"]:
+                        newlist3.append(item)
+                else:
+                    newlist3.append(item)
+
+            # 业务影响
+            newlist4 = []
+            YEWUYINGXIANG = request.query_params.get("YEWUYINGXIANG", '')
+            for item in newlist3:
+                if YEWUYINGXIANG != "":
+                    aList = TicketField.objects.filter(key='YEWUYINGXIANG', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    #print(json.loads(result))
+                    #print(json.loads(result)[0]["fields"]["_value"])
+                    # print(item["id"])
+                    if len(json.loads(result)) > 0:
+                        #if YEWUYINGXIANG == json.loads(result)[0]["fields"]["_value"]:
+                        for i in json.loads(result):
+                            #print(i["fields"]["_value"])
+                            #print('+++++++++++++++++=')
+                            m = re.search(YEWUYINGXIANG, i["fields"]["_value"])
+                            print(m)
+                            print('-------------')
+
+                            if i["fields"]["_value"] == YEWUYINGXIANG:
+                                newlist4.append(item)
+                else:
+                    newlist4.append(item)
+
+            return self.get_paginated_response(newlist4)
 
         # BEP: get_serializer instead of serializer class directly
         data = TicketList(
@@ -327,6 +397,7 @@ class TicketModelViewSet(ModelViewSet):
             username=request.user.username,
             token=request.query_params.get("token", ""),
         ).to_client_representation()
+
         return Response(data)
 
     def custom_filter_queryset(self, request):

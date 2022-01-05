@@ -24,6 +24,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
 import copy
+import json
 import traceback
 from functools import wraps
 
@@ -143,17 +144,20 @@ class TicketViewSet(ApiGatewayMixin, component_viewsets.ModelViewSet):
     """
 
     queryset = Ticket.objects.filter(is_deleted=False, is_draft=False)
+    #print(queryset)
     serializer_class = TicketSerializer
     pagination_class = OpenApiPageNumberPagination
-
+    #print('22222222222`')
     def custom_filter_queryset(self, request, username):
         """构造查询queryset"""
         queryset = self.filter_queryset(self.get_queryset())
+        #print(queryset)
         if queryset.exists():
             filter_serializer = TicketFilterSerializer(data=request.query_params)
             filter_serializer.is_valid(raise_exception=True)
             kwargs = filter_serializer.validated_data
             queryset = Ticket.objects.get_tickets(username, queryset, **kwargs)
+            #print(json.dump(queryset))
         return queryset
 
     @action(detail=False, methods=["get"], serializer_class=TicketStatusSerializer)
@@ -496,6 +500,7 @@ class TicketViewSet(ApiGatewayMixin, component_viewsets.ModelViewSet):
         if username is None:
             raise ParamError("user 为必填项")
         queryset = self.custom_filter_queryset(request, username)
+
         page = self.paginate_queryset(queryset)
         if page is not None:
             data = TicketList(
