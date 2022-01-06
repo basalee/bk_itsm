@@ -1,0 +1,2549 @@
+ERROR [2021-11-26 17:00:52] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 23794 140006139217984 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 199, in connect
+    conn_params = self.get_connection_params()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 207, in get_connection_params
+    if settings_dict['HOST'].startswith('/'):
+AttributeError: 'NoneType' object has no attribute 'startswith'
+ 
+
+INFO [2021-11-26 17:00:52] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 23794 140006139217984 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-26 17:03:35] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 24327 139826979334208 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 199, in connect
+    conn_params = self.get_connection_params()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 207, in get_connection_params
+    if settings_dict['HOST'].startswith('/'):
+AttributeError: 'NoneType' object has no attribute 'startswith'
+ 
+
+INFO [2021-11-26 17:03:35] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 24327 139826979334208 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-26 17:05:46] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 24724 140551520618560 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 199, in connect
+    conn_params = self.get_connection_params()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 207, in get_connection_params
+    if settings_dict['HOST'].startswith('/'):
+AttributeError: 'NoneType' object has no attribute 'startswith'
+ 
+
+ERROR [2021-11-26 17:05:52] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 24743 140182202775616 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 199, in connect
+    conn_params = self.get_connection_params()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 207, in get_connection_params
+    if settings_dict['HOST'].startswith('/'):
+AttributeError: 'NoneType' object has no attribute 'startswith'
+ 
+
+INFO [2021-11-26 17:05:52] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 24743 140182202775616 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-26 17:20:55] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 27733 140003677132864 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (1049, "Unknown database 'bk-itsm'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (1049, "Unknown database 'bk-itsm'")
+ 
+
+INFO [2021-11-26 17:20:55] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 27733 140003677132864 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-26 17:20:55] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 27733 140003677132864 
+ 	 (1049, "Unknown database 'bk-itsm'") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (1049, "Unknown database 'bk-itsm'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (1049, "Unknown database 'bk-itsm'")
+ERROR [2021-11-26 17:21:52] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 27911 140369416431680 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (1049, "Unknown database 'bk-itsm'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (1049, "Unknown database 'bk-itsm'")
+ 
+
+INFO [2021-11-26 17:21:52] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 27911 140369416431680 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-26 17:21:52] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 27911 140369416431680 
+ 	 (1049, "Unknown database 'bk-itsm'") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (1049, "Unknown database 'bk-itsm'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (1049, "Unknown database 'bk-itsm'")
+ERROR [2021-11-26 17:23:47] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 28278 140004200187968 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+INFO [2021-11-26 17:23:47] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 28278 140004200187968 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-26 17:23:47] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 28278 140004200187968 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-26 17:24:59] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 28497 139635376609344 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+ERROR [2021-11-26 17:24:59] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 61 init_component_framework 28497 139635376609344 
+ 	 (1146, "Table 'bk_itsm.component_framework_componentmodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.component_framework_componentmodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/component_framework/apps.py", line 51, in init_component_framework
+    ComponentModel.objects.all().update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.component_framework_componentmodel' doesn't exist")
+ERROR [2021-11-26 17:24:59] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 28497 139635376609344 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-26 17:25:07] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 28541 140452175861824 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+ERROR [2021-11-26 17:25:08] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 61 init_component_framework 28541 140452175861824 
+ 	 (1146, "Table 'bk_itsm.component_framework_componentmodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.component_framework_componentmodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/component_framework/apps.py", line 51, in init_component_framework
+    ComponentModel.objects.all().update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.component_framework_componentmodel' doesn't exist")
+ERROR [2021-11-26 17:25:08] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 28541 140452175861824 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-26 17:25:26] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 28607 140193981302848 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+ERROR [2021-11-26 17:25:26] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 61 init_component_framework 28607 140193981302848 
+ 	 (1146, "Table 'bk_itsm.component_framework_componentmodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.component_framework_componentmodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/component_framework/apps.py", line 51, in init_component_framework
+    ComponentModel.objects.all().update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.component_framework_componentmodel' doesn't exist")
+ERROR [2021-11-26 17:25:26] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 28607 140193981302848 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-26 17:25:58] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 28693 139851597948992 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+INFO [2021-11-26 17:25:58] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 28693 139851597948992 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-26 17:25:58] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 28693 139851597948992 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-26 17:27:54] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 29059 140298276804672 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+INFO [2021-11-26 17:27:54] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 29059 140298276804672 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-26 17:27:54] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 29059 140298276804672 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-26 17:36:59] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 30763 139629059389504 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+INFO [2021-11-26 17:36:59] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 30763 139629059389504 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-26 17:36:59] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 30763 139629059389504 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-26 17:37:16] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 30826 140487646464064 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+ERROR [2021-11-26 17:37:16] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 61 init_component_framework 30826 140487646464064 
+ 	 (1146, "Table 'bk_itsm.component_framework_componentmodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.component_framework_componentmodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/component_framework/apps.py", line 51, in init_component_framework
+    ComponentModel.objects.all().update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.component_framework_componentmodel' doesn't exist")
+ERROR [2021-11-26 17:37:16] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 30826 140487646464064 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-26 17:37:23] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 30859 140417852217408 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+INFO [2021-11-26 17:37:23] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 30859 140417852217408 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-26 17:37:23] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 30859 140417852217408 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-26 22:05:27] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 16376 140539549177920 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+INFO [2021-11-26 22:05:27] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 16376 140539549177920 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-26 22:05:27] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 16376 140539549177920 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-26 22:55:19] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 25798 139624628004928 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+INFO [2021-11-26 22:55:19] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 25798 139624628004928 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-26 22:55:19] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 25798 139624628004928 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-29 09:30:01] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 10200 140216403208256 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+INFO [2021-11-29 09:30:01] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 10200 140216403208256 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-29 09:30:01] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 10200 140216403208256 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-29 10:12:44] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 18485 140311445383232 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+INFO [2021-11-29 10:12:44] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 18485 140311445383232 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-29 10:12:44] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 18485 140311445383232 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-29 10:20:26] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 19924 140528784033856 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.engine_functionswitch' doesn't exist")
+ 
+
+INFO [2021-11-29 10:20:26] /mnt/test/bk-itsm/pipeline/component_framework/apps.py 41 init_component_framework 19924 140528784033856 
+ 	 ignore components init for command: ['manage.py', 'migrate'] 
+
+ERROR [2021-11-29 10:20:26] /mnt/test/bk-itsm/pipeline/variable_framework/apps.py 46 ready 19924 140528784033856 
+ 	 (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist") 
+Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/variable_framework/apps.py", line 43, in ready
+    VariableModel.objects.exclude(code__in=list(VariableLibrary.variables.keys())).update(status=False)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'bk_itsm.variable_framework_variablemodel' doesn't exist")
+ERROR [2021-11-30 17:07:39] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 18475 140397013059648 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 17:08:40] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 18678 140503087470656 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 17:29:35] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 22574 140386552035392 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 17:37:12] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 23997 140397075138624 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 17:38:22] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 24218 139653201233984 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 17:46:16] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 25873 139832250939456 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 18:41:01] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 8127 140194814732352 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 18:41:41] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 8268 140239291422784 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 19:34:38] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 18367 140504226621504 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 19:50:19] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 21361 140363661027392 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 19:53:55] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 22157 140328757852224 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 19:53:57] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 22164 140454913148992 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 20:09:27] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 25188 140629373638720 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 20:09:43] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 25245 140495631165504 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 20:09:45] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 25256 140535630395456 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 21:37:56] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 9693 140656540411968 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 21:38:22] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 9776 140394732611648 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 21:38:29] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 9797 140527536519232 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 21:39:19] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 9972 140255583348800 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 21:40:07] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 10251 140471339358272 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 21:40:52] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 10384 139624451143744 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 21:43:01] /mnt/test/bk-itsm/pipeline/engine/models/function.py 41 init_db 10384 139624451143744 
+ 	 function switch init failed: Traceback (most recent call last):
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2003, "Can't connect to MySQL server on '81.71.35.176' (110)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/test/bk-itsm/pipeline/engine/models/function.py", line 28, in init_db
+    name_set = {s.name for s in self.all()}
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "/opt/py36/lib/python3.6/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '81.71.35.176' (110)")
+ 
+
+ERROR [2021-11-30 21:47:19] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 11604 139761674795072 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 21:54:03] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 12880 140617207973952 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 21:59:22] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 13909 140710451927104 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 22:04:07] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 14955 140093087672384 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-11-30 22:04:09] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 14961 140073626032192 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 09:26:32] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 15454 140038561871936 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 09:26:33] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 15464 140626482649152 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 10:18:50] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 26242 140534955161664 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 10:18:52] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 26251 139913006065728 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 10:27:34] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 27935 139873071056960 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 10:37:57] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 29942 140078600099904 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 10:41:16] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 30595 140557810841664 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:20:43] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 28752 140269050071104 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:20:45] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 28764 140325753759808 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:20:50] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 28783 140211556042816 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:20:52] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 28791 140466279950400 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:27:53] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 30089 139944032675904 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:27:55] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 30101 140658010454080 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:36:09] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 31641 139672768374848 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:39:03] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 32207 139647016503360 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:40:14] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 32435 140256017123392 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:41:52] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 32735 139679859669056 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:42:50] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 465 139823629510720 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:42:52] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 474 140518826985536 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:42:59] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 496 140012085221440 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:43:00] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 506 139822431242304 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:44:47] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 948 139790372517952 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 13:44:49] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 955 140285692696640 
+ 	 can not find REDIS in settings! 
+
+INFO [2021-12-01 14:00:00] /mnt/test/bk-itsm/itsm/ticket/tasks.py 73 auto_comment 32448 140256017123392 
+ 	 添加默认评价 
+
+ERROR [2021-12-01 14:28:15] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 9158 140063023667264 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 14:28:16] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 9164 139732853692480 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 16:32:41] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 5213 140235575502912 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 16:32:43] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 5223 139660131305536 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 16:36:08] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 5865 140602558502976 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 16:36:09] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 5876 140437583284288 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 16:57:33] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 10032 139765477087296 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 16:57:35] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 10043 140158666627136 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:03:59] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 11267 139948541003840 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:04:01] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 11277 140293159569472 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:06:05] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 11777 139671195863104 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:06:06] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 11783 139917620938816 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:06:58] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 11933 140256135366720 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:06:59] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 11939 139755470784576 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:10:09] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 12559 140450370164800 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:10:11] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 12569 140244505204800 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:13:01] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 13123 140468847847488 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:13:02] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 13129 140612519442496 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:17:55] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 14064 139980728748096 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:17:56] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 14071 139745449543744 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:35:18] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 17354 140350092503104 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:35:34] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 17412 140410298779712 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:37:08] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 17702 139687147862080 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:37:10] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 17712 139680587274304 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:47:40] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 19853 140148322850880 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:47:42] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 19858 139831298254912 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:49:52] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 20265 140299069704256 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:50:02] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 20295 140171701037120 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:50:03] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 20324 140065120991296 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:57:45] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 21737 140097020856384 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 17:57:47] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 21745 140691271706688 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:10:33] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 24181 139840149493824 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:10:35] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 24191 140174614956096 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:10:56] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 24254 140056283215936 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:10:58] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 24260 139807731013696 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:11:43] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 24402 140619671451712 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:11:44] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 24409 140087920027712 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:15:02] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 25068 139978209880128 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:15:03] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 25095 140185881532480 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:24:06] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 26758 140680254990400 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:24:08] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 26764 139951428552768 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:25:16] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 27042 140208330520640 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:25:18] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 27048 140515317565504 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:27:45] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 27504 139868144162880 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:27:47] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 27512 139766513186880 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:29:01] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 27738 140082606549056 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:29:02] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 27743 139655651194944 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:29:47] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 27955 140148871579712 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:29:48] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 27960 140024004364352 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:30:18] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 28092 140453320390720 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:30:20] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 28103 140142002108480 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:30:58] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 28237 140191106451520 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:31:00] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 28248 140163707172928 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:32:08] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 28483 140536798324800 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:32:10] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 28493 140534315112512 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:32:59] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 28694 140547816966208 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 18:33:00] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 28704 140059234084928 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 19:35:30] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 8119 140198838908992 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 19:35:31] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 8124 140515158612032 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 20:13:56] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 15594 139843031205952 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-01 20:13:57] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 15599 140404683487296 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-02 09:42:08] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 7550 140509245950016 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-02 09:42:15] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 7588 139786804189248 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-02 09:42:31] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 7629 139922976950336 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-02 09:42:33] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 7640 140279350306880 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-02 09:49:38] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 9070 139797624391744 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-02 09:50:05] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 9175 140439334660160 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-02 09:50:06] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 9181 140190523111488 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-02 09:50:14] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 9215 140572167714880 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-02 09:50:15] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 9225 140562464753728 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-02 14:03:37] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 24430 140645634889792 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-02 14:03:38] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 24435 139812697217088 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 09:51:04] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 12974 140411783731264 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 09:51:06] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 12999 139759138781248 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 10:58:10] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 25864 140093557123136 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 10:58:12] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 25870 140668089690176 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 10:58:19] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 25893 139753363142720 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 10:58:21] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 25904 139770141247552 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 10:58:59] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 26013 139791111870528 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 10:59:01] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 26024 139926793025600 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 14:52:22] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 4668 140253772040256 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 14:52:23] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 4680 139631581984832 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 14:54:11] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 5018 139797684963392 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 14:54:12] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 5023 140078047152192 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 14:56:07] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 5390 139646622029888 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 14:56:08] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 5396 139939425380416 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 14:58:50] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 5898 140131339724864 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 14:58:52] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 5907 140258207062080 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 15:00:11] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 6179 139745037948992 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 15:00:12] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 6184 140100949432384 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 15:00:21] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 6226 140570698553408 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 15:00:22] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 6231 140447534196800 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 15:45:36] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 14973 139866480711744 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 15:45:38] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 14978 140034958665792 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 15:53:29] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 16450 139929924130880 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 15:53:31] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 16460 139681293617216 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 15:54:12] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 16586 140383873931328 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 15:54:14] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 16598 140679899281472 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 15:58:39] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 17546 140343008950336 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 15:58:40] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 17558 140563190057024 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 16:01:04] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 18050 140189876914240 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-06 16:01:05] /mnt/test/bk-itsm/pipeline/apps.py 90 ready 18061 140266381416512 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-07 23:59:58] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 23964 4576284160 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-07 23:59:59] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 23964 4576284160 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
+ERROR [2021-12-08 00:00:02] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 23980 4412141056 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-08 00:00:03] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 23980 4412141056 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
+ERROR [2021-12-08 11:24:27] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 1615 4717645312 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-08 11:24:30] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 1615 4717645312 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
+ERROR [2021-12-08 11:24:33] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 1622 4622831104 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-08 11:24:36] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 1622 4622831104 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
+ERROR [2021-12-08 11:44:58] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 2883 4471377408 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-08 11:45:01] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 2883 4471377408 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
+ERROR [2021-12-08 11:45:03] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 2887 4503916032 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-08 11:45:06] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 2887 4503916032 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
+ERROR [2021-12-08 14:21:06] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 3332 4349451776 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-08 14:21:07] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 3332 4349451776 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
+ERROR [2021-12-08 14:21:09] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 3334 4695338496 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-08 14:21:10] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 3334 4695338496 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
+ERROR [2021-12-08 14:23:24] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 3356 4769680896 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-08 14:23:25] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 3356 4769680896 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
+ERROR [2021-12-08 14:23:27] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 3358 4598750720 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-08 14:23:28] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 3358 4598750720 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
+ERROR [2021-12-08 15:42:31] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 3704 4597186048 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-08 15:42:34] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 3704 4597186048 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
+ERROR [2021-12-08 15:42:36] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 3706 4488248832 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-08 15:42:39] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 3706 4488248832 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
+ERROR [2021-12-08 15:46:39] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 3815 4529921536 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-08 15:46:41] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 3815 4529921536 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
+ERROR [2021-12-08 15:46:50] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/pipeline/apps.py 90 ready 3831 4686089728 
+ 	 can not find REDIS in settings! 
+
+ERROR [2021-12-08 15:46:52] /Users/lidonghui/Desktop/test/mnt/test/bk-itsm/itsm/component/dlls/autodiscover.py 49 autodiscover_items 3831 4686089728 
+ 	 [!] module(itsm.trigger.action.components.send_message) import failed with err: __class__ not set defining 'SendMessage' as <class 'itsm.trigger.action.components.send_message.SendMessage'>. Was __classcell__ propagated to type.__new__? 
+
