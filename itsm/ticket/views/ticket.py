@@ -566,7 +566,7 @@ class TicketModelViewSet(ModelViewSet):
                                 newlist.append(item)
                 else:
                     newlist.append(item)
-
+            #print(newlist)
             return self.get_paginated_response(newlist)
 
         # BEP: get_serializer instead of serializer class directly
