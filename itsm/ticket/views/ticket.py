@@ -654,7 +654,7 @@ class TicketModelViewSet(ModelViewSet):
                 value=default if old_value is None else old_value,
             )
             fields.append(field)
-        print(fields)
+        #print(fields)
         return Response(fields)
 
     @action(detail=False, methods=["post"])
