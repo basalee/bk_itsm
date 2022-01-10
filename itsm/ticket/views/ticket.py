@@ -373,23 +373,202 @@ class TicketModelViewSet(ModelViewSet):
                     aList = TicketField.objects.filter(key='YEWUYINGXIANG', ticket_id=item["id"])
                     result = serializers.serialize('json', aList)
                     #print(json.loads(result))
-                    #print(json.loads(result)[0]["fields"]["_value"])
-                    # print(item["id"])
                     if len(json.loads(result)) > 0:
                         #if YEWUYINGXIANG == json.loads(result)[0]["fields"]["_value"]:
                         for i in json.loads(result):
+                            if str.lower(YEWUYINGXIANG) in str.lower(i["fields"]["_value"]):
+
                             #print(i["fields"]["_value"])
                             #print('+++++++++++++++++=')
-                            m = re.search(YEWUYINGXIANG, i["fields"]["_value"])
-                            print(m)
-                            print('-------------')
+                            #m = re.search(YEWUYINGXIANG, i["fields"]["_value"])
 
-                            if i["fields"]["_value"] == YEWUYINGXIANG:
+                            #if i["fields"]["_value"] == YEWUYINGXIANG:
                                 newlist4.append(item)
                 else:
                     newlist4.append(item)
 
-            return self.get_paginated_response(newlist4)
+            #原因描述
+            newlist5 = []
+            YUANYINMIAOSHU = request.query_params.get("YUANYINMIAOSHU", '')
+            for item in newlist4:
+                if YUANYINMIAOSHU != "":
+                    aList = TicketField.objects.filter(key='YUANYINMIAOSHU', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if len(json.loads(result)) > 0:
+                        for i in json.loads(result):
+                            if str.lower(YUANYINMIAOSHU) in str.lower(i["fields"]["_value"]):
+                                newlist5.append(item)
+                else:
+                    newlist5.append(item)
+
+            #服务影响
+            newlist6 = []
+            FUWUYINGXIANG = request.query_params.get("FUWUYINGXIANG", '')
+            for item in newlist5:
+                if FUWUYINGXIANG != "":
+                    aList = TicketField.objects.filter(key='FUWUYINGXIANG', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if len(json.loads(result)) > 0:
+                        for i in json.loads(result):
+                            if str.lower(FUWUYINGXIANG) in str.lower(i["fields"]["_value"]):
+                                newlist6.append(item)
+                else:
+                    newlist6.append(item)
+
+            #私人日志
+            newlist7 = []
+            SIRENRIZHI = request.query_params.get("SIRENRIZHI", '')
+            for item in newlist6:
+                if SIRENRIZHI != "":
+                    aList = TicketField.objects.filter(key='SIRENRIZHI', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if len(json.loads(result)) > 0:
+                        for i in json.loads(result):
+                            if str.lower(SIRENRIZHI) in str.lower(i["fields"]["_value"]):
+                                newlist7.append(item)
+                else:
+                    newlist7.append(item)
+
+            #背景
+            newlist8 = []
+            BEIJING = request.query_params.get("BEIJING", '')
+            for item in newlist7:
+                if BEIJING != "":
+                    aList = TicketField.objects.filter(key='BEIJING', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if len(json.loads(result)) > 0:
+                        for i in json.loads(result):
+                            if str.lower(BEIJING) in str.lower(i["fields"]["_value"]):
+                                newlist8.append(item)
+                else:
+                    newlist8.append(item)
+
+            #补救措施
+            newlist9 = []
+            BUJIUCUOSHI = request.query_params.get("BUJIUCUOSHI", '')
+            for item in newlist8:
+                if BUJIUCUOSHI != "":
+                    aList = TicketField.objects.filter(key='BUJIUCUOSHI', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if len(json.loads(result)) > 0:
+                        for i in json.loads(result):
+                            if str.lower(BUJIUCUOSHI) in str.lower(i["fields"]["_value"]):
+                                newlist9.append(item)
+                else:
+                    newlist9.append(item)
+
+            #问题症状
+            newlist10 = []
+            WENTIZHENGZHUANG = request.query_params.get("WENTIZHENGZHUANG", '')
+            for item in newlist9:
+                if WENTIZHENGZHUANG != "":
+                    aList = TicketField.objects.filter(key='WENTIZHENGZHUANG', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if len(json.loads(result)) > 0:
+                        for i in json.loads(result):
+                            if str.lower(WENTIZHENGZHUANG) in str.lower(i["fields"]["_value"]):
+                                newlist10.append(item)
+                else:
+                    newlist10.append(item)
+
+            #预防措施
+            newlist11 = []
+            YUFANGCUOSHI = request.query_params.get("YUFANGCUOSHI", '')
+            for item in newlist10:
+                if YUFANGCUOSHI != "":
+                    aList = TicketField.objects.filter(key='YUFANGCUOSHI', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if len(json.loads(result)) > 0:
+                        for i in json.loads(result):
+                            if str.lower(YUFANGCUOSHI) in str.lower(i["fields"]["_value"]):
+                                newlist11.append(item)
+                else:
+                    newlist11.append(item)
+
+            #来源
+            newlist12 = []
+            LAIYUAN = request.query_params.get("LAIYUAN", '')
+            for item in newlist11:
+                if LAIYUAN != "":
+                    aList = TicketField.objects.filter(key='LAIYUAN', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if len(json.loads(result)) > 0:
+                        if LAIYUAN == json.loads(result)[0]["fields"]["_value"]:
+                            newlist12.append(item)
+                else:
+                    newlist12.append(item)
+
+            #错误画面
+            newlist13 = []
+            CUOWUHUAMIAN = request.query_params.get("CUOWUHUAMIAN", '')
+            for item in newlist12:
+                if CUOWUHUAMIAN != "":
+                    aList = TicketField.objects.filter(key='CUOWUHUAMIAN', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if len(json.loads(result)) > 0:
+                        if CUOWUHUAMIAN == json.loads(result)[0]["fields"]["_value"]:
+                            newlist13.append(item)
+                else:
+                    newlist13.append(item)
+
+            #来电者联系方式
+            newlist14 = []
+            LAIDIANZHELIANXIFANGSHI = request.query_params.get("LAIDIANZHELIANXIFANGSHI", '')
+            for item in newlist13:
+                if LAIDIANZHELIANXIFANGSHI != "":
+                    aList = TicketField.objects.filter(key='LAIDIANZHELIANXIFANGSHI', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if len(json.loads(result)) > 0:
+                        for i in json.loads(result):
+                            if str.lower(LAIDIANZHELIANXIFANGSHI) in str.lower(i["fields"]["_value"]):
+                                newlist14.append(item)
+                else:
+                    newlist14.append(item)
+
+            #呼叫者
+            newlist15 = []
+            HUJIAOZHE = request.query_params.get("HUJIAOZHE", '')
+            for item in newlist14:
+                if HUJIAOZHE != "":
+                    aList = TicketField.objects.filter(key='HUJIAOZHE', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if len(json.loads(result)) > 0:
+                        for i in json.loads(result):
+                            if str.lower(HUJIAOZHE) in str.lower(i["fields"]["_value"]):
+                                newlist15.append(item)
+                else:
+                    newlist15.append(item)
+
+            #受让人
+            newlist16 = []
+            SHOURANGREN = request.query_params.get("SHOURANGREN", '')
+            for item in newlist15:
+                if SHOURANGREN != "":
+                    aList = TicketField.objects.filter(key='SHOURANGREN', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if len(json.loads(result)) > 0:
+                        for i in json.loads(result):
+                            if str.lower(SHOURANGREN) in str.lower(i["fields"]["_value"]):
+                                newlist16.append(item)
+                else:
+                    newlist16.append(item)
+
+            #受让人团队
+            newlist = []
+            SHOURANGRENTUANDUI = request.query_params.get("SHOURANGRENTUANDUI", '')
+            for item in newlist16:
+                if SHOURANGRENTUANDUI != "":
+                    aList = TicketField.objects.filter(key='SHOURANGRENTUANDUI', ticket_id=item["id"])
+                    result = serializers.serialize('json', aList)
+                    if len(json.loads(result)) > 0:
+                        for i in json.loads(result):
+                            if str.lower(SHOURANGRENTUANDUI) in str.lower(i["fields"]["_value"]):
+                                newlist.append(item)
+                else:
+                    newlist.append(item)
+
+            #print(newlist)
+            return self.get_paginated_response(newlist)
 
         # BEP: get_serializer instead of serializer class directly
         data = TicketList(
