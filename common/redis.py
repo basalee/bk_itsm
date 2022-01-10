@@ -37,10 +37,10 @@ from redis.sentinel import Sentinel
 logger = logging.getLogger(__name__)
 
 REDIS_CONF = {
-    "host":"127.0.0.1",
+    "host":"192.168.2.11",
     "port":6379,
     "db":0,
-    "password":'123456',
+    "password":'swn7bgDq2TVK',
     "sentinel_password":'',
 }
 

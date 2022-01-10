@@ -45,7 +45,7 @@ BK_STATIC_URL = '/static'
 # Celery 消息队列设置 RabbitMQ
 # BROKER_URL = 'amqp://guest:guest@localhost:5672//'
 # Celery 消息队列设置 Redis
-BROKER_URL = "redis://:123456@127.0.0.1:6379/0"
+BROKER_URL = "redis://:swn7bgDq2TVK@192.168.2.11:6379/0"
 
 DEBUG = True
 
