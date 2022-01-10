@@ -58,6 +58,19 @@ DATABASES.update(
     }
 )
 
+# DATABASES.update(
+#     {
+#         "default": {
+#             "ENGINE": "django.db.backends.mysql",
+#             "NAME": os.environ.get("BKAPP_DB_TEST"),
+#             "USER": os.environ.get("BKAPP_MYSQL_USER"),
+#             "PASSWORD": os.environ.get("BKAPP_MYSQL_PASS"),
+#             "HOST": os.environ.get("BKAPP_MYSQL_IP"),
+#             "PORT": os.environ.get("BKAPP_MYSQL_PORT"),
+#         },
+#     }
+# )
+
 ALLOW_CSRF = os.environ.get("BKAPP_ALLOW_CSRF", None) == "1"
 
 # ===============================================================================

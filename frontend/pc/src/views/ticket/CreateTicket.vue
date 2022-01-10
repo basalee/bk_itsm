@@ -223,7 +223,7 @@
                 // 校验规则
                 this.rules.name = this.checkCommonRules('name').name
                 this.serviceId = this.$route.query.service_id
-                
+
                 this.getTemplateList()
                 await this.getServiceDetail()
                 await this.getFieldList()
@@ -393,7 +393,7 @@
                         params.template.push(templateItem)
                     }
                 })
-                
+
                 return params
             },
             // 更新模板

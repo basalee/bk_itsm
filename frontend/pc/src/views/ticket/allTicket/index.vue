@@ -239,6 +239,142 @@
                     value: '',
                     list: [],
                     placeholder: '业务影响'
+                },
+                {
+                    name: '原因描述',
+                    type: 'input',
+                    key: 'YUANYINMIAOSHU',
+                    multiSelect: true,
+                    display: true,
+                    value: '',
+                    list: [],
+                    placeholder: '原因描述'
+                },
+                {
+                    name: '服务影响',
+                    type: 'input',
+                    key: 'FUWUYINGXIANG',
+                    multiSelect: true,
+                    display: true,
+                    value: '',
+                    list: [],
+                    placeholder: '服务影响'
+                },
+                {
+                    name: '私人日志',
+                    type: 'input',
+                    key: 'SIRENRIZHI',
+                    multiSelect: true,
+                    display: true,
+                    value: '',
+                    list: [],
+                    placeholder: '私人日志'
+                },
+                {
+                    name: '背景',
+                    type: 'input',
+                    key: 'BEIJING',
+                    multiSelect: true,
+                    display: true,
+                    value: '',
+                    list: [],
+                    placeholder: '背景'
+                },
+                {
+                    name: '补救措施',
+                    type: 'input',
+                    key: 'BUJIUCUOSHI',
+                    multiSelect: true,
+                    display: true,
+                    value: '',
+                    list: [],
+                    placeholder: '补救措施'
+                },
+                {
+                    name: '问题症状',
+                    type: 'input',
+                    key: 'WENTIZHENGZHUANG',
+                    multiSelect: true,
+                    display: true,
+                    value: '',
+                    list: [],
+                    placeholder: '问题症状'
+                },
+                {
+                    name: '预防措施',
+                    type: 'input',
+                    key: 'YUFANGCUOSHI',
+                    multiSelect: true,
+                    display: true,
+                    value: '',
+                    list: [],
+                    placeholder: '预防措施'
+                },
+                {
+                    name: '来源',
+                    key: 'LAIYUAN',
+                    type: 'select',
+                    display: true,
+                    value: '',
+                    list: [
+                        { 'key': 'PHONE', name: 'phone' },
+                        { 'key': 'EMAIL', name: 'email' },
+                        { 'key': 'MONITORING', name: 'monitoring' },
+                        { 'key': 'PORTAL', name: 'portal' }
+                    ],
+                    placeholder: '来源'
+                },
+                {
+                    name: '错误画面',
+                    key: 'CUOWUHUAMIAN',
+                    type: 'select',
+                    display: true,
+                    value: '',
+                    list: [
+                        { 'key': 'YES', name: 'yes' },
+                        { 'key': 'NO', name: 'no' }
+                    ],
+                    placeholder: '错误画面'
+                },
+                {
+                    name: '来电者联系方式',
+                    type: 'input',
+                    key: 'LAIDIANZHELIANXIFANGSHI',
+                    multiSelect: true,
+                    display: true,
+                    value: '',
+                    list: [],
+                    placeholder: '来电者联系方式'
+                },
+                {
+                    name: '呼叫者',
+                    type: 'input',
+                    key: 'HUJIAOZHE',
+                    multiSelect: true,
+                    display: true,
+                    value: '',
+                    list: [],
+                    placeholder: '呼叫者'
+                },
+                {
+                    name: '受让人',
+                    type: 'input',
+                    key: 'SHOURANGREN',
+                    multiSelect: true,
+                    display: true,
+                    value: '',
+                    list: [],
+                    placeholder: '受让人'
+                },
+                {
+                    name: '受让人团队',
+                    type: 'input',
+                    key: 'SHOURANGRENTUANDUI',
+                    multiSelect: true,
+                    display: true,
+                    value: '',
+                    list: [],
+                    placeholder: '受让人团队'
                 }
             ]
             return {
