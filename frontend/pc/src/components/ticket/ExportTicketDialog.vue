@@ -239,7 +239,7 @@
                     export_fields: this.exportInfo.checkList.toString(),
                     ...this.searchParams
                 }
-                
+
                 // 如果是通过导出选择的服务，则覆盖原本高级搜索中的服务参数
                 if (this.exportInfo.serviceId) {
                     params.service_id__in = this.exportInfo.serviceId
