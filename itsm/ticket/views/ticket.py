@@ -38,6 +38,7 @@ from django.conf import settings
 from django.core.cache import cache
 from django.db import connection, transaction
 from django.db.models import Count, Q
+from django.forms import model_to_dict
 from django.http import HttpResponse
 from django.utils.translation import ugettext as _
 from mako.template import Template
@@ -170,7 +171,7 @@ from itsm.ticket.views.sql_file import get_my_deal_tickets_sql
 from itsm.ticket_status.models import TicketStatus
 from itsm.sla_engine.serializers import SlaTaskSerializer
 from itsm.sla_engine.models import SlaTask
-
+from itsm.workflow.models import Workflow, WorkflowVersion, Field
 
 class ModelViewSet(component_viewsets.ModelViewSet):
     """按需改造DRF默认的ModelViewSet类"""
@@ -635,6 +636,44 @@ class TicketModelViewSet(ModelViewSet):
 
         # 获取对应的流程版本
         service, catalog_services = service_validate(service_id)
+        # 通过service表找到version_id，通过version表找到workflow_id，通过workflow_id到fileds表里查出自定义的字段，最后加到fields里
+        obj = Service.objects.get(id=service_id)
+        print(service_id)
+        print('---------------')
+        dicObj = model_to_dict(obj)
+        print(dicObj)
+        print('_______________')
+
+        versionObj = WorkflowVersion.objects.get(id=dicObj["workflow"])
+        print(dicObj["workflow"])
+        print('++++++++++++++')
+        versiondictObj = model_to_dict(versionObj)
+        print(versiondictObj)
+        print('==============')
+        # workflow_id
+        filedsArray = Field.objects.filter(workflow_id=versiondictObj["workflow_id"])
+        filedsArrayDic = filedsArray.values()
+        print(filedsArrayDic)
+        print('00000000000000')
+
+        filedsArrayDicCopy = []
+        result = []
+        # field_ids = service.workflow.first_state["fields"]
+        field_ids = []
+        for i in filedsArrayDic:
+            flag = False
+            for k in filedsArrayDicCopy:
+                if k["name"] == i["name"]:
+                    flag = True
+            if flag == False:
+                filedsArrayDicCopy.append(i)
+                field_ids.append(i["id"])
+        print(field_ids)
+        for i in filedsArrayDicCopy:
+            obj = {}
+            obj[i["id"]] = i
+            result.append(obj)
+
         field_ids = service.workflow.first_state["fields"]
         state_id = service.workflow.first_state["id"]
 
@@ -655,8 +694,8 @@ class TicketModelViewSet(ModelViewSet):
             )
             fields.append(field)
 
-        #print(fields)
-        return Response(fields)
+        print(result)
+        return Response(result)
 
     @action(detail=False, methods=["post"])
     def api_field_choices(self, request):

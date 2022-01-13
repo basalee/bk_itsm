@@ -5,7 +5,7 @@ const webpackBase = require('./webpack.base.conf')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // 本地代理地址
-const HOST = ''
+const HOST = 'paas.bktencent.com'
 const ORIGIN = `http://${HOST}`
 const SET_URL = ''
 
@@ -39,7 +39,7 @@ module.exports = merge(webpackBase, {
         overlay: true,
         proxy: {
             '/api/*':{
-                target: ORIGIN + SET_URL,
+                target: 'http://localhost:8000',
                 changeOrigin: true,
                 secure: false
             },
