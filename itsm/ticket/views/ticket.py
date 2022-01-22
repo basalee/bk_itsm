@@ -310,7 +310,7 @@ class TicketModelViewSet(ModelViewSet):
             u'service_type__in': [u'request,']
         }
         """
-
+        print(request)
         # 初始化serializer的上下文
         queryset = self.custom_filter_queryset(request)
 
@@ -567,7 +567,34 @@ class TicketModelViewSet(ModelViewSet):
                                 newlist.append(item)
                 else:
                     newlist.append(item)
-            #print(newlist)
+
+            print(newlist)
+            print('-----------------00000000000000000------------------')
+
+            # 优先级排序
+            # 前端request传递priority_name过来，然后获取到之后赋值给priority_name变量
+            #property_name = request.get["priority_name"]
+            priority_name = "高"
+            priority_name_max = "高"
+            priority_name_min = "低"
+            if priority_name == "低":
+                priority_name_max = "低"
+                priority_name_min = "高"
+            outList = []
+            # 把高的找出来
+            for obj in newlist:
+                if obj["priority_name"] == priority_name_max:
+                    outList.append(obj)
+            # 把中的找出来
+            for obj in newlist:
+                if obj["priority_name"] == "中":
+                    outList.append(obj)
+            # 把低的找出来
+            for obj in newlist:
+                if obj["priority_name"] == priority_name_min:
+                    outList.append(obj)
+            newlist = outList
+
             return self.get_paginated_response(newlist)
 
         # BEP: get_serializer instead of serializer class directly
@@ -638,23 +665,24 @@ class TicketModelViewSet(ModelViewSet):
         service, catalog_services = service_validate(service_id)
         # 通过service表找到version_id，通过version表找到workflow_id，通过workflow_id到fileds表里查出自定义的字段，最后加到fields里
         obj = Service.objects.get(id=service_id)
-        print(service_id)
-        print('---------------')
+        print(service_id)           #获取service_id
+        print('-----------------111111111111111111------------------')
         dicObj = model_to_dict(obj)
-        print(dicObj)
-        print('_______________')
+        print(dicObj)               #转换为字典的数据
+        print('-----------------222222222222222222------------------')
 
         versionObj = WorkflowVersion.objects.get(id=dicObj["workflow"])
-        print(dicObj["workflow"])
-        print('++++++++++++++')
+        #workflow_id是workflow
+        print(dicObj["workflow"])       #对应的workflowversion表里的workflow的id
+        print('-----------------333333333333333333------------------')
         versiondictObj = model_to_dict(versionObj)
-        print(versiondictObj)
-        print('==============')
+        print(versiondictObj)           #转换为字典的数据
+        print('-----------------444444444444444444------------------')
         # workflow_id
         filedsArray = Field.objects.filter(workflow_id=versiondictObj["workflow_id"])
         filedsArrayDic = filedsArray.values()
-        print(filedsArrayDic)
-        print('00000000000000')
+        print(filedsArrayDic)           #找出对应的field表里的workflow_id
+        print('-----------------555555555555555555------------------')
 
         filedsArrayDicCopy = []
         result = []
@@ -669,6 +697,7 @@ class TicketModelViewSet(ModelViewSet):
                 filedsArrayDicCopy.append(i)
                 field_ids.append(i["id"])
         print(field_ids)
+        print('-----------------666666666666666666------------------')
         for i in filedsArrayDicCopy:
             obj = {}
             obj[i["id"]] = i
@@ -695,6 +724,7 @@ class TicketModelViewSet(ModelViewSet):
             fields.append(field)
 
         print(result)
+        print('-----------------7777777777777777777------------------')
         return Response(result)
 
     @action(detail=False, methods=["post"])
