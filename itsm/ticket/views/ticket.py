@@ -311,6 +311,7 @@ class TicketModelViewSet(ModelViewSet):
         }
         """
         print(request)
+        print('--------------------------------------------')
         # 初始化serializer的上下文
         queryset = self.custom_filter_queryset(request)
 
@@ -581,15 +582,15 @@ class TicketModelViewSet(ModelViewSet):
                 priority_name_max = "低"
                 priority_name_min = "高"
             outList = []
-            # 把高的找出来
+            # 把优先级高的找出来
             for obj in newlist:
                 if obj["priority_name"] == priority_name_max:
                     outList.append(obj)
-            # 把中的找出来
+            # 把优先级中的找出来
             for obj in newlist:
                 if obj["priority_name"] == "中":
                     outList.append(obj)
-            # 把低的找出来
+            # 把优先级低的找出来
             for obj in newlist:
                 if obj["priority_name"] == priority_name_min:
                     outList.append(obj)
