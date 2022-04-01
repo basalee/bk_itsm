@@ -311,7 +311,7 @@ class TicketModelViewSet(ModelViewSet):
         }
         """
         print(request)
-        print('--------------------------------------------')
+        print('-------------------打印前端请求-------------------------')
         # 初始化serializer的上下文
         queryset = self.custom_filter_queryset(request)
 
@@ -327,21 +327,33 @@ class TicketModelViewSet(ModelViewSet):
                 username=request.user.username,
                 token=request.query_params.get("token", ""),
             ).to_client_representation()
+            ###需求：增加筛选字段。###
             #优先级
-            newlist1 = []
-            priority = request.query_params.get("priority", '')
+            newlist1 = []  #定义一个空列表
+            priority = request.query_params.get("priority", '')         #从前端获取优先级的参数
+            print(priority)
+            print('---------------打印前端传过来的priority----------------')
             for item in data:
-                if priority != "":
+                print(item)
+                print('------------打印itsm里的数据-------------')
+                if priority != "":      #priority不为空的时候执行下面
                     aList = TicketField.objects.filter(key='priority', ticket_id=item["id"])
-                    result = serializers.serialize('json', aList)
-                    #print(json.loads(result)[0])
-                    #print(json.loads(result)[0]["fields"]["_value"])
+                    #找出TicketField表里的key值为priority，并且ticket_id等于item里的id的数据
+                    result = serializers.serialize('json', aList)       #将数据转换为json格式
+                    print(result)
+                    print('------------打印出转换为json格式的数据的result-------------')
+                    print(json.loads(result)[0])
+                    print('------------打印json.loads(result)[0]-------------')
+                    print(json.loads(result)[0]["fields"]["_value"])
+                    print('------------json.loads(result)[0]["fields"]["_value"]-------------')
                     if priority == json.loads(result)[0]["fields"]["_value"]:
+                        #用前端传回来的priority和json.loads(result)[0]里的fileds里的_value做比对，等于就添加至列表，json.loads(result)[0]的数据格式如下
+    #{'model': 'ticket.ticketfield', 'pk': 433, 'fields': {'creator': None, 'create_at': '2021-12-27T16:35:31.082', 'update_at': '2021-12-27T16:35:31.082', 'updated_by': None, 'end_at': None, 'is_deleted': False, 'is_builtin': True, 'is_readonly': True, 'is_valid': True, 'display': True, 'source_type': 'DATADICT', 'source_uri': 'PRIORITY', 'api_instance_id': 0, 'kv_relation': '{}', 'type': 'SELECT', 'key': 'priority', 'name': '优先级', 'layout': 'COL_12', 'validate_type': 'REQUIRE', 'show_type': 1, 'show_conditions': '{}', 'regex': 'EMPTY', 'regex_config': '{}', 'custom_regex': '', 'desc': '请选择优先级', 'tips': '', 'is_tips': False, 'default': '', 'choice': '[{"key": "1", "name": "\\u4f4e", "order": 1}, {"key": "2", "name": "\\u4e2d", "order": 2}, {"key": "3", "name": "\\u9ad8", "order": 3}]', 'related_fields': '{"rely_on": ["urgency", "impact"]}', 'meta': '{}', 'ticket': 43, 'state_id': '', '_value': '3', 'source': 'BASE-MODEL', 'workflow_field_id': 4}}
                         newlist1.append(item)
                 else:
                     newlist1.append(item)
             #print(newlist)
-            #紧急程度
+            #紧急程度19
             newlist2 = []
             urgency = request.query_params.get("urgency", '')
             #print(urgency)
@@ -375,10 +387,10 @@ class TicketModelViewSet(ModelViewSet):
                     aList = TicketField.objects.filter(key='YEWUYINGXIANG', ticket_id=item["id"])
                     result = serializers.serialize('json', aList)
                     #print(json.loads(result))
-                    if len(json.loads(result)) > 0:
+                    if len(json.loads(result)) > 0:         #大于0是取出有数据的去做下面的循环
                         #if YEWUYINGXIANG == json.loads(result)[0]["fields"]["_value"]:
                         for i in json.loads(result):
-                            if str.lower(YEWUYINGXIANG) in str.lower(i["fields"]["_value"]):
+                            if str.lower(YEWUYINGXIANG) in str.lower(i["fields"]["_value"]):  #str.lower将所有大写转换为小写
 
                             #print(i["fields"]["_value"])
                             #print('+++++++++++++++++=')
@@ -570,22 +582,28 @@ class TicketModelViewSet(ModelViewSet):
                     newlist.append(item)
 
             print(newlist)
-            print('-----------------00000000000000000------------------')
+            print('-----------------打印newlist里的数据------------------')
 
+            ###需求：优先级排序报错。###
             # 优先级排序
             # 前端request传递priority_name过来，然后获取到之后赋值给priority_name变量
-            #property_name = request.get["priority_name"]
+            #priority_name = request.get["priority_name"]
+            #property_name是前端传回来的数据
             priority_name = "高"
+            #前端设置好之后，上面这个property_name则可以去掉，因为这个是用来测试的
             priority_name_max = "高"
             priority_name_min = "低"
             if priority_name == "低":
                 priority_name_max = "低"
                 priority_name_min = "高"
+            #如果前端传过来为低的时候，修改priority_name_max为低，priority_name_min为高
             outList = []
-            # 把优先级高的找出来
+            #定义一个空列表
+            # 把优先级高的找出来ƒ
             for obj in newlist:
                 if obj["priority_name"] == priority_name_max:
                     outList.append(obj)
+            #循环newlist的priority_name等于priority_name_max，则添加至列表outList
             # 把优先级中的找出来
             for obj in newlist:
                 if obj["priority_name"] == "中":
@@ -664,26 +682,27 @@ class TicketModelViewSet(ModelViewSet):
 
         # 获取对应的流程版本
         service, catalog_services = service_validate(service_id)
+        ###需求：自定义表单字段在提单界面不显示###
         # 通过service表找到version_id，通过version表找到workflow_id，通过workflow_id到fileds表里查出自定义的字段，最后加到fields里
         obj = Service.objects.get(id=service_id)
         print(service_id)           #获取service_id
-        print('-----------------111111111111111111------------------')
+        print('-----------------打印service_id------------------')
         dicObj = model_to_dict(obj)
         print(dicObj)               #转换为字典的数据
-        print('-----------------222222222222222222------------------')
+        print('-----------------打印转换为字典的dicObj------------------')
 
         versionObj = WorkflowVersion.objects.get(id=dicObj["workflow"])
         #workflow_id是workflow
         print(dicObj["workflow"])       #对应的workflowversion表里的workflow的id
-        print('-----------------333333333333333333------------------')
+        print('-----------------打印workflow_id------------------')
         versiondictObj = model_to_dict(versionObj)
         print(versiondictObj)           #转换为字典的数据
-        print('-----------------444444444444444444------------------')
+        print('-----------------打印转换为字段的versiondictObj------------------')
         # workflow_id
         filedsArray = Field.objects.filter(workflow_id=versiondictObj["workflow_id"])
         filedsArrayDic = filedsArray.values()
         print(filedsArrayDic)           #找出对应的field表里的workflow_id
-        print('-----------------555555555555555555------------------')
+        print('-----------------找出对应的field表里的workflow_id------------------')
 
         filedsArrayDicCopy = []
         result = []
@@ -698,7 +717,7 @@ class TicketModelViewSet(ModelViewSet):
                 filedsArrayDicCopy.append(i)
                 field_ids.append(i["id"])
         print(field_ids)
-        print('-----------------666666666666666666------------------')
+        print('-----------------打印出做好比对处理的数据------------------')
         for i in filedsArrayDicCopy:
             obj = {}
             obj[i["id"]] = i
@@ -725,8 +744,8 @@ class TicketModelViewSet(ModelViewSet):
             fields.append(field)
 
         print(result)
-        print('-----------------7777777777777777777------------------')
-        return Response(result)
+        print('-----------------打印出返回给前端的result------------------')
+        return Response(fields)
 
     @action(detail=False, methods=["post"])
     def api_field_choices(self, request):
@@ -811,6 +830,16 @@ class TicketModelViewSet(ModelViewSet):
             data.append({"service": service, "count": 0})
 
         return Response(data)
+
+    #新增public log接口
+    @action(detail=False, methods=["get"])
+    def updateTicketFileds(self, request, *args, **kwargs):
+        print("2342", request.GET.get("id"), request.GET.get("PUBLICLOG"))
+        abc=TicketField.objects.get(pk=request.GET.get("id"))
+        print(abc)
+        abc.value=abc.value + "," + request.GET.get("PUBLICLOG")
+        abc.save()
+        return Response({"code": 0, "msg": "数据修改成功"})
 
     @action(detail=True, methods=["post"])
     def send_sms(self, request, *args, **kwargs):

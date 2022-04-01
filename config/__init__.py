@@ -53,6 +53,7 @@ RUN_VER = "open"
 # SaaS应用ID
 APP_ID = "bk-itsm"
 # SaaS安全密钥，注意请勿泄露该密钥
+#APP_TOKEN = "969a3cc7-4ca9-430f-a36a-262b359d29f6"
 APP_TOKEN = "c7d412ad-4ffc-4878-8302-c5b5c8a5dfea"
 # 蓝鲸SaaS平台URL，例如 http://paas.bking.com
 
@@ -72,3 +73,8 @@ PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT, PROJECT_MODULE_NAME = os.path.split(PROJECT_PATH)
 BASE_DIR = PROJECT_ROOT
 PYTHON_BIN = os.path.dirname(sys.executable)
+
+
+print(APP_CODE)
+print(SECRET_KEY)
+print(BK_PAAS_HOST)
